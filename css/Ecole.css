@@ -27,11 +27,10 @@ body>header>nav{
     
 }
 
-/* On regroupe les 3 IDs pour éviter de répéter le code */
 #div1, #div2, #div3 {
     border: solid 1px;
     border-radius: 6px;
-    color: #003366;
+    color:  #5A6351;
     padding: 12px;      
     text-align: center;
     font-size: 12px;
@@ -56,6 +55,6 @@ footer {
 .lien_footer {
     text-decoration: none;
     font-style: italic;
-    color: grey; 
+    color: #5A6351; 
     margin-top: 10px;
 }

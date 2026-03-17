@@ -27,16 +27,34 @@ body>header>nav{
     
 }
 
-    
-
-.titre{
-    border:solid 1px;
-    width: 160px;
-    border-radius:10px ;
-    border:solid 1px;
-    width: 160px;
+#div1, #div2, #div3 {
+    border: solid 1px;
+    border-radius: 6px;
+    color:  #5A6351;
+    padding: 12px;      
     text-align: center;
+    font-size: 12px;
+    width: 200px;
+   
+}
+
+footer {
     display: flex;
-    padding: 12px 0;       
-    margin: 10px; 
+    justify-content: center;
+    gap: 20px; /* Espace entre les colonnes */
+    padding-bottom: 50px;
+}
+
+.divs {
+    margin: 40px; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lien_footer {
+    text-decoration: none;
+    font-style: italic;
+    color: #5A6351; 
+    margin-top: 10px;
 }
