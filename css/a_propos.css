@@ -22,7 +22,27 @@ body>header>nav{
     text-align: center;
     width: 190px;
     font-size: 12px;
-    height: 10px;
+    border:solid 1px;
+    width: 160px;
     
     
+}
+
+
+
+    
+
+
+    
+
+.titre{
+    border:solid 1px;
+    width: 160px;
+    border-radius:6px ;
+    border:solid 1px;
+    width: 160px;
+    text-align: center;
+    display: flex;
+    padding: 12px 0;       
+    margin: 10px; 
 }
