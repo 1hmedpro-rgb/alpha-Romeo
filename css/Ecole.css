@@ -26,3 +26,36 @@ body>header>nav{
     
     
 }
+
+/* On regroupe les 3 IDs pour éviter de répéter le code */
+#div1, #div2, #div3 {
+    border: solid 1px;
+    border-radius: 6px;
+    color: #003366;
+    padding: 12px;      
+    text-align: center;
+    font-size: 12px;
+    width: 200px;
+   
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espace entre les colonnes */
+    padding-bottom: 50px;
+}
+
+.divs {
+    margin: 40px; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lien_footer {
+    text-decoration: none;
+    font-style: italic;
+    color: grey; 
+    margin-top: 10px;
+}
