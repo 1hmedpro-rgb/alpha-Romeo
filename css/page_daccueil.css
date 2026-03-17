@@ -1,7 +1,7 @@
 
 body>header>nav{
-    display: flex; /*crée la lignement (pas précis)*/
-    align-items: center; /*aligne tout les élément du nav de manière alligné*/
+    display: flex; /*crée l'alignement (pas précis) on peut avoir des truc en haut et en abs*/
+    align-items: center; /*aligne tout les élément du nav de manière alligné (avec précision)*/
     
     
 }
