@@ -2,6 +2,7 @@
 body>header>nav{
     display: flex; /*crée la lignement (pas précis)*/
     align-items: center; /*aligne tout les élément du nav de manière alligné*/
+    justify-content : space-between;
     
     
 }
@@ -20,7 +21,7 @@ body>header>nav{
     text-decoration: none;    /* Enlève le soulignement */
     color: #003366;
     text-align: center;
-    width: 190px;
+    width: 45000px;
     font-size: 12px;
     height: 10px;
     
@@ -43,7 +44,8 @@ footer {
     display: flex;
     justify-content: center;
     gap: 20px; /* Espace entre les colonnes */
-    padding-bottom: 50px;
+    padding-bottom: 50px; /*ESPACE EN BAS*/
+    border-top: 1px solid black;
 }
 
 .divs {
