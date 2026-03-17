@@ -57,6 +57,12 @@ body>header>nav{
     width: 200px;
 }
 
+.box {
+    border: 1px solid blue;
+    border-radius: 20px;
+    padding: 10px;
+}
+
 .rang {
     border: 1px solid blue;
     border-radius: 20px;
@@ -80,8 +86,6 @@ body>header>nav{
 }
 
 .description {
-    border: 1px solid blue; 
-    border-radius: 10px; 
     padding: 5px;
     font-size: 8px; 
     text-align: center; 
@@ -108,3 +112,13 @@ body>header>nav{
 }
 
 
+
+
+#stats {
+    border: 1px solid blue;
+}
+
+.infogen {
+    display: flex;
+    text-align: center;
+}
