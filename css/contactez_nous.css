@@ -1,6 +1,4 @@
-/* =========================================
-   POLICE ET PARAMÈTRES GLOBAUX
-   ========================================= */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
 
 * {
@@ -14,9 +12,7 @@ body {
     background-color: #ffffff; 
 }
 
-/* =========================================
-   EN-TÊTE AVEC IMAGE DE FOND
-   ========================================= */
+
 #haut-de-page {
     background-image: url("../image/campus2.jpg");
     background-size: cover;
@@ -39,7 +35,6 @@ body>header>nav{
     display: flex;
 }
 
-/* Liens du menu (Blanc car sur l'image) */
 .lien {
     border: 1px solid white;
     border-radius: 6px;     
@@ -59,12 +54,10 @@ body>header>nav{
     transform: scale(1.1);
 }
 
-/* =========================================
-   TITRE DE LA PAGE CONTACT
-   ========================================= */
+
 #titre-contact-header {
     text-align: center;
-    color: white; /* Blanc sur l'image */
+    color: white; 
     padding-top: 60px;
 }
 
@@ -78,14 +71,12 @@ body>header>nav{
 
 #titre-contact-header p {
     font-size: 20px;
-    color: #FF00FF; /* Magenta Néon */
+    color: #FF00FF;
     font-weight: 700;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
 }
 
-/* =========================================
-   SECTION CONTACT (FOND BLANC)
-   ========================================= */
+
 #contact-container {
     display: flex;
     justify-content: center;
@@ -95,19 +86,19 @@ body>header>nav{
     flex-wrap: wrap; 
 }
 
-/* Boîtes Infos et Formulaire */
+
 .contact-info, .contact-form {
     background-color: #ffffff;
     padding: 40px;
     border-radius: 20px;
-    border: 2px solid #003366; /* Bordure Bleu foncé */
+    border: 2px solid #003366;
     box-shadow: 0 10px 30px rgba(0, 51, 102, 0.1); 
     flex: 1; 
     min-width: 320px;
 }
 
 .contact-info h2, .contact-form h2 {
-    color: #FF00FF; /* Magenta Néon */
+    color: #FF00FF;
     margin-bottom: 30px;
     font-size: 24px;
     text-transform: uppercase;
@@ -115,7 +106,7 @@ body>header>nav{
 }
 
 .info-item {
-    color: #003366; /* Bleu foncé sur fond blanc */
+    color: #003366;
     font-size: 16px;
     margin-bottom: 25px;
     font-weight: 600;
@@ -130,7 +121,7 @@ body>header>nav{
     border-top: 1px solid rgba(0, 51, 102, 0.2); 
 }
 
-/* --- LE FORMULAIRE --- */
+
 .contact-form form {
     display: flex;
     flex-direction: column;
@@ -145,20 +136,20 @@ body>header>nav{
     background-color: #f8f9fa; 
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    color: #003366; /* Texte tapé en bleu foncé */
+    color: #003366;
     outline: none;
     transition: all 0.3s ease;
 }
 
 .contact-form input:focus, .contact-form textarea:focus {
-    border-color: #FF00FF; /* Bordure Magenta au clic */
+    border-color: #FF00FF;
     background-color: white;
     box-shadow: 0 0 10px rgba(255, 0, 255, 0.2); 
 }
 
 .contact-form button {
-    background-color: #003366; /* Bouton Bleu foncé */
-    color: white; /* Texte du bouton en blanc pour être lisible */
+    background-color: #003366;
+    color: white;
     border: none;
     padding: 15px;
     border-radius: 10px;
@@ -171,20 +162,18 @@ body>header>nav{
 }
 
 .contact-form button:hover {
-    background-color: #FF00FF; /* Bouton Magenta au survol */
+    background-color: #FF00FF; 
     box-shadow: 0 5px 15px rgba(255, 0, 255, 0.4);
     transform: translateY(-3px);
 }
 
-/* =========================================
-   FOOTER (FOND BLANC)
-   ========================================= */
+
 footer {
     display: flex;
     justify-content: center;
     gap: 20px; 
     padding-bottom: 50px;
-    border-top: 1px solid #003366; /* Bordure Bleu foncé */
+    border-top: 1px solid #003366;
     margin-top: 100px;
 }
 
@@ -198,7 +187,7 @@ footer {
 #div1, #div2, #div3 {
     border: solid 1px;
     border-radius: 6px;
-    color: #003366; /* Bleu foncé sur fond blanc */
+    color: #003366;
     padding: 12px;      
     text-align: center;
     font-size: 12px;
@@ -209,7 +198,7 @@ footer {
 .lien_footer {
     text-decoration: none;
     font-style: italic;
-    color: #003366; /* Bleu foncé sur fond blanc */
+    color: #003366; 
     margin-top: 10px;
     background-color:#6B7480;
     padding: 5px 10px;
@@ -219,5 +208,5 @@ footer {
 
 .lien_footer:hover{
     transform: scale(1.1);
-    color: #FF00FF; /* Magenta Néon au survol */
+    color: #FF00FF;
 }
