@@ -219,3 +219,34 @@ body{
 .box:hover{
     transform: scale(1.1);
 }
+
+
+
+#espace_condidature{
+    border: solid 1px white;
+    width: 1000PX;
+    height: 350px;
+    margin-left :500px;
+    margin-top: 400px;
+    border-radius: 20px;
+}
+
+
+.text_espace{
+    color: white;
+    margin-left: 65px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+#titre_espace{
+
+
+    font-size: 30px;
+    text-decoration:underline;
+}
+
+
+
