@@ -1,0 +1,223 @@
+/* =========================================
+   POLICE ET PARAMÈTRES GLOBAUX
+   ========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff; 
+}
+
+/* =========================================
+   EN-TÊTE AVEC IMAGE DE FOND
+   ========================================= */
+#haut-de-page {
+    background-image: url("../image/campus2.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 80px; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+}
+
+body>header>nav{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+#logo{
+    width: 200px;
+    height: 60px;
+    margin :20px;
+    display: flex;
+}
+
+/* Liens du menu (Blanc car sur l'image) */
+.lien {
+    border: 1px solid white;
+    border-radius: 6px;     
+    padding: 12px 20px;       
+    margin: 10px;              
+    color: white; 
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 15px white;
+    transition: transform 0.3s ease;
+}
+
+.lien:hover{
+    transform: scale(1.1);
+}
+
+/* =========================================
+   TITRE DE LA PAGE CONTACT
+   ========================================= */
+#titre-contact-header {
+    text-align: center;
+    color: white; /* Blanc sur l'image */
+    padding-top: 60px;
+}
+
+#titre-contact-header h1 {
+    font-size: 55px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+}
+
+#titre-contact-header p {
+    font-size: 20px;
+    color: #FF00FF; /* Magenta Néon */
+    font-weight: 700;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+}
+
+/* =========================================
+   SECTION CONTACT (FOND BLANC)
+   ========================================= */
+#contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 80px 10%;
+    background-color: #ffffff;
+    flex-wrap: wrap; 
+}
+
+/* Boîtes Infos et Formulaire */
+.contact-info, .contact-form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid #003366; /* Bordure Bleu foncé */
+    box-shadow: 0 10px 30px rgba(0, 51, 102, 0.1); 
+    flex: 1; 
+    min-width: 320px;
+}
+
+.contact-info h2, .contact-form h2 {
+    color: #FF00FF; /* Magenta Néon */
+    margin-bottom: 30px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.info-item {
+    color: #003366; /* Bleu foncé sur fond blanc */
+    font-size: 16px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.horaires {
+    margin-top: 40px;
+    color: #003366; 
+    font-size: 14px;
+    line-height: 1.8;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 51, 102, 0.2); 
+}
+
+/* --- LE FORMULAIRE --- */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 51, 102, 0.3); 
+    background-color: #f8f9fa; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #003366; /* Texte tapé en bleu foncé */
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #FF00FF; /* Bordure Magenta au clic */
+    background-color: white;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.2); 
+}
+
+.contact-form button {
+    background-color: #003366; /* Bouton Bleu foncé */
+    color: white; /* Texte du bouton en blanc pour être lisible */
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.contact-form button:hover {
+    background-color: #FF00FF; /* Bouton Magenta au survol */
+    box-shadow: 0 5px 15px rgba(255, 0, 255, 0.4);
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   FOOTER (FOND BLANC)
+   ========================================= */
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    padding-bottom: 50px;
+    border-top: 1px solid #003366; /* Bordure Bleu foncé */
+    margin-top: 100px;
+}
+
+.divs {
+    margin: 40px; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#div1, #div2, #div3 {
+    border: solid 1px;
+    border-radius: 6px;
+    color: #003366; /* Bleu foncé sur fond blanc */
+    padding: 12px;      
+    text-align: center;
+    font-size: 12px;
+    width: 200px;
+    background-color: #6B7480;
+}
+
+.lien_footer {
+    text-decoration: none;
+    font-style: italic;
+    color: #003366; /* Bleu foncé sur fond blanc */
+    margin-top: 10px;
+    background-color:#6B7480;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.lien_footer:hover{
+    transform: scale(1.1);
+    color: #FF00FF; /* Magenta Néon au survol */
+}

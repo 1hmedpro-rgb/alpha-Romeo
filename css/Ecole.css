@@ -1,11 +1,17 @@
+/* IMPORTATION DE LA NOUVELLE POLICE (POPPINS) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+
+/* APPLICATION DE LA POLICE À TOUT LE SITE */
+* {
+    font-family: 'Poppins', sans-serif;
+}
 
 body>header>nav{
-    display: flex; /*crée la lignement (pas précis)*/
-    align-items: center; /*aligne tout les élément du nav de manière alligné*/
-    justify-content: space-between;/*ajoute des espace sjusqu'a le remplissage d ela page entiere*/
-    
-    
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
 }
+
 #logo{
     width: 200px;
     height: 60px;
@@ -18,7 +24,7 @@ body>header>nav{
     border-radius: 6px;     
     padding: 12px 0;       
     margin: 10px;              
-    color:white;
+    color: white; 
     text-align: center;
     width: 45000px;
     font-size: 12px;
@@ -26,9 +32,6 @@ body>header>nav{
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
     box-shadow: 0px 0px 15px white;
-
-
-    
 }
 
 .lien:hover{
@@ -38,22 +41,21 @@ body>header>nav{
 #div1, #div2, #div3 {
     border: solid 1px;
     border-radius: 6px;
-    color: white;
+    color: #003366; 
     padding: 12px;      
     text-align: center;
     font-size: 12px;
     width: 200px;
     background-color: #6B7480;
     text-shadow: 0px 0px 15px white;
-   
 }
 
 footer {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Espace entre les colonnes */
+    gap: 20px; 
     padding-bottom: 50px;
-    border-top: 1px solid white;
+    border-top: 1px solid #003366; 
     margin-top: 200px;
 }
 
@@ -67,11 +69,10 @@ footer {
 .lien_footer {
     text-decoration: none;
     font-style: italic;
-    color:white; 
+    color: #003366; 
     margin-top: 10px;
     background-color:#6B7480;
     box-shadow: 0px 0px 15px white;
-
 }
 
 .lien_footer:hover{
@@ -79,7 +80,7 @@ footer {
 }
 
 #section_podium {
-    display: flex; /*pour metre le texte et le classement cote a cote*/
+    display: flex; 
     justify-content:space-between;
     align-items: center;
     padding: 150px;
@@ -88,13 +89,12 @@ footer {
 
 .texte-intro h1 {
     font-size: 50px;
-    color: white;
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+    color: white; 
     font-weight: bold;
     font-style: normal;
     line-height: 1.2; 
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
-    border-left: 6px solid #F472B6; 
+    border-left: 6px solid #FF00FF; 
     padding-left: 20px; 
 }
 
@@ -120,14 +120,12 @@ footer {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer; 
 }
+
 .place-1 { margin-bottom: 70px; } 
 .place-2 { margin-bottom: 35px; } 
 .place-3 { margin-bottom: 0px;  }
 
-
-
 #stats {
-    font-family: 'Montserrat', sans-serif;
     border-top: 1px solid rgba(255, 255, 255, 0.5);     
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);  
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.02)); 
@@ -137,7 +135,6 @@ footer {
     margin-top: 120px; 
 }
 
-
 .infogen {
     display: flex;
     justify-content: space-evenly; 
@@ -146,7 +143,6 @@ footer {
     width: 100%;
     gap: 30px; 
 }
-
 
 .info {
     text-align: center;
@@ -161,54 +157,23 @@ footer {
 
 .chiffre {
     font-size: 65px; 
-    color: white;
+    color: white; 
     font-weight: 800;
     margin-bottom: 10px; 
 }
 
 .description_chiffre {
-    color: rgba(255, 255, 255, 0.9); 
+    color: white; 
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase; 
     letter-spacing: 2px;
 }
 
-
-.image-box{
-    width: 100%;
-
-}
-
-.image-box #img1{
-    width: 100%;
-    border-radius: 20px;
-    margin-top:100px ;
-    height: 300px;
-}
-
-
-
-
-.image-box #img2{
-    width: 100%;
-    border-radius: 20px;
-    margin-top: 145px;
-    margin-bottom: 50px;
-    height: 300px;
-    
-}
-
-.image-box #img3{
-    width: 100%;
-    border-radius: 20px;
-    margin-top: 145px;
-    margin-bottom: 50px;
-    height: 300px;
-    
-}
-
-
+.image-box{ width: 100%; }
+.image-box #img1{ width: 100%; border-radius: 20px; margin-top:100px ; height: 300px; }
+.image-box #img2{ width: 100%; border-radius: 20px; margin-top: 145px; margin-bottom: 50px; height: 300px; }
+.image-box #img3{ width: 100%; border-radius: 20px; margin-top: 145px; margin-bottom: 50px; height: 300px; }
 
 body {
     background-color: #ffffff; 
@@ -219,20 +184,16 @@ body {
     background-image: url("../image/campus2.jpg");
     background-size: cover;
     background-position: center;
-    padding-bottom: 80px; /* Fait descendre l'image un peu plus bas que les stats */
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Petite ligne propre pour marquer la fin de l'image */
+    padding-bottom: 80px; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
 }
-
-
 
 .box:hover{
     transform: scale(1.1);
 }
 
-
-
 #espace_condidature{
-    border: solid 1px white;
+    border: solid 1px #003366; 
     width: 1000PX;
     height: 350px;
     margin-left :500px;
@@ -240,9 +201,8 @@ body {
     border-radius: 20px;
 }
 
-
 .text_espace{
-    color: white;
+    color: #003366; 
     margin-left: 65px;
     margin-top: 80px;
     display: flex;
@@ -251,11 +211,12 @@ body {
 }
 
 #titre_espace{
-
-
     font-size: 30px;
     text-decoration:underline;
 }
 
-
-
+button[type="submit"] {
+    font-family: 'Poppins', sans-serif; /* Assure que le bouton prend aussi la police */
+    font-weight: bold;
+    cursor: pointer;
+}

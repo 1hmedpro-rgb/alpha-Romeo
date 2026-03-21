@@ -5,49 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Contactez-nous - Efrei</title>
-    <link rel="stylesheet" href="../css/Ecole.css">
+    <link rel="stylesheet" href="../css/contactez_nous.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href = "page_daccueil.html"> <img src="../logo_efrei.png" alt="logo_efrei" id="logo"></a>
-            <a href="Ecole.html" class="lien">L'ECOLE</a>
-            <a href="cours_et_formations.html" class="lien">COURS / FORMATIONS</a>
-            <a href="equipe_enseignante.html" class="lien">EQUIPE ENSEIGNANTE</a>
-            <a href="contactez_nous.html" class="lien">CONTACTEZ-NOUS</a>
-            <a href="a_propos.html" class="lien">A PROPOS</a>
 
+    <div id="haut-de-page">
+        <header>
+            <nav>
+                <a href="page_daccueil.html"> <img src="../logo_efrei.png" alt="logo_efrei" id="logo"></a>
+                <a href="Ecole.html" class="lien">L'ECOLE</a>
+                <a href="cours_et_formations.html" class="lien">COURS / FORMATIONS</a>
+                <a href="equipe_enseignante.html" class="lien">EQUIPE ENSEIGNANTE</a>
+                <a href="contactez_nous.html" class="lien">CONTACTEZ-NOUS</a>
+                <a href="a_propos.html" class="lien">A PROPOS</a>
+            </nav>
+        </header>
+
+        <div id="titre-contact-header">
+            <h1>Contactez-nous</h1>
+            <p>Une question ? Notre équipe est à votre écoute.</p>
+        </div>
+    </div>
+
+
+    <section id="contact-container">
+        
+        <div class="contact-info">
+            <h2>Nos Coordonnées</h2>
+            <div class="info-item">📍 30-32 Avenue de la République, 94800 Villejuif</div>
+            <div class="info-item">📞 01 46 77 46 77</div>
+            <div class="info-item">✉️ contact@efrei.fr</div>
             
-        </nav>
-    </header>
+            <div class="horaires">
+                <strong>Horaires d'ouverture :</strong><br>
+                Lundi au Vendredi : 8h30 - 18h00<br>
+                Fermé le week-end.
+            </div>
+        </div>
 
-    
-    <section></section>
+        <div class="contact-form">
+            <h2>Envoyez-nous un message</h2>
+            <form action="#" method="POST">
+                <input type="text" placeholder="Votre Nom et Prénom" required>
+                <input type="email" placeholder="Votre adresse Email" required>
+                <input type="text" placeholder="Sujet de votre message" required>
+                <textarea rows="6" placeholder="Écrivez votre message ici..." required></textarea>
+                <button type="submit">Envoyer le message</button>
+            </form>
+        </div>
 
-            
+    </section>
+
     <footer>
+        <div class="divs">
+            <h3 id="div1">NAVIGATION</h3><br><br>
+            <a href="Ecole.html" class="lien_footer">L'ECOLE</a><br><br>
+            <a href="cours_et_formations.html" class="lien_footer">COURS / FORMATIONS</a>
+        </div>
+        
+        <div class="divs">
+            <h3 id="div2">LIENS RAPIDES</h3><br><br>
+            <a href="equipe_enseignante.html" class="lien_footer">EQUIPE ENSEIGNANTE</a><br><br>
+            <a href="a_propos.html" class="lien_footer">A PROPOS</a>
+        </div>
 
-            
-            <div class ="divs">
-                <h3  id="div1" >NVIGATION</h3><br><br>
-                <a href="Ecole.html" class="lien_footer">L'ECOLE</a><br><br>
-                <a href="cours_et_formations.html" class="lien_footer">COURS / FORMATIONS</a>
-            </div>
-            
-            
-            <div class ="divs">
-                <h3  id="div2" >LIENS RAPIDES</h3><br><br>
-                <a href="equipe_enseignante.html" class="lien_footer">EQUIPE ENSEIGNANTE</a><br><br>
-                <a href="a_propos.html" class="lien_footer">A PROPOS</a>
-            </div>
-
-            
-            <div class ="divs"> 
-                <h3 id="div3">CONTACT</h3><br><br>
-                <a href="contactez_nous.html" class="lien_footer">CONTACTEZ-NOUS</a>
-            </div>
-            
+        <div class="divs"> 
+            <h3 id="div3">CONTACT</h3><br><br>
+            <a href="contactez_nous.html" class="lien_footer">CONTACTEZ-NOUS</a>
+        </div>
     </footer>
 
 </body>
