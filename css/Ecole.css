@@ -1,7 +1,6 @@
 /* IMPORTATION DE LA NOUVELLE POLICE (POPPINS) */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
 
-/* APPLICATION DE LA POLICE À TOUT LE SITE */
 * {
     font-family: 'Poppins', sans-serif;
 }
