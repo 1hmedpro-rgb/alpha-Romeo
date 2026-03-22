@@ -41,11 +41,11 @@ header {
 body>header>nav {
     display: flex; 
     align-items: center;
-    justify-content: flex-start; /* Aligne tout au début (à gauche) */
+    justify-content: flex-start; /* NOUVEAU : Aligne tout au début (à gauche) */
 }
 
 body>header>nav > a:first-child {
-    margin-right: 40px; /* Laisse juste un petit espace de 40px après le logo */
+    margin-right: 40px; /* NOUVEAU : Laisse un espace de 40px après le logo */
     display: flex;
     align-items: center;
 }
@@ -73,144 +73,6 @@ body>header>nav > a:first-child {
     transform: translateY(-3px); 
     color: rgb(255, 0, 255); 
     text-shadow: 0px 0px 10px rgba(255, 0, 255, 0.5); 
-}
-
-
-/*3. SECTION PODIUM*/
-
-#section_podium {
-    display: flex; 
-    justify-content:space-between;
-    align-items: center;
-    padding: 150px;
-    margin-top: 50px;
-}
-
-.texte-intro h1 {
-    font-size: 50px;
-    color: white; 
-    font-weight: bold;
-    font-style: normal;
-    line-height: 1.2; 
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
-    border-left: 6px solid #FF00FF; 
-    padding-left: 20px; 
-}
-
-.podium {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center; 
-    gap: 40px; 
-    padding-top: 50px; 
-}
-
-.carte img {
-    max-width: 100%;
-    max-height: 250px;
-    object-fit: contain;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer; 
-}
-
-.carte img:hover {
-    transform: translateY(-20px);
-    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.7); 
-}
-
-.place-1 { margin-bottom: 70px; } 
-.place-2 { margin-bottom: 35px; } 
-.place-3 { margin-bottom: 0px;  }
-
-.box:hover {
-    transform: scale(1.1);
-}
-
-.image-box { width: 100%; }
-.image-box #img1 { width: 100%; border-radius: 20px; margin-top:100px ; height: 300px; }
-.image-box #img2 { width: 100%; border-radius: 20px; margin-top: 145px; margin-bottom: 50px; height: 300px; }
-.image-box #img3 { width: 100%; border-radius: 20px; margin-top: 145px; margin-bottom: 50px; height: 300px; }
-
-
-/*4. SECTION STATISTIQUES*/
-
-#stats {
-    border-top: 1px solid rgba(255, 255, 255, 0.5);     
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);  
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.02)); 
-    backdrop-filter: blur(15px); 
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    padding: 15px ; 
-    margin-top: 120px; 
-}
-
-.infogen {
-    display: flex;
-    justify-content: space-evenly; 
-    align-items: center;
-    flex-wrap: wrap; 
-    width: 100%;
-    gap: 30px; 
-}
-
-.info {
-    text-align: center;
-    padding: 15px;
-    transition: transform 0.3s ease; 
-    cursor: default;
-}
-
-.info:hover {
-    transform: translateY(-10px);
-}
-
-.chiffre {
-    font-size: 65px; 
-    color: white; 
-    font-weight: 800;
-    margin-bottom: 10px; 
-}
-
-.description_chiffre {
-    color: white; 
-    font-size: 16px;
-    font-weight: 700;
-    text-transform: uppercase; 
-    letter-spacing: 2px;
-}
-
-
-/*5. ESPACE CANDIDATURE*/
-
-#espace_condidature {
-    border: solid 1px #003366; 
-    width: 1000PX;
-    height: 350px;
-    margin-left :500px;
-    margin-top: 400px;
-    border-radius: 20px;
-}
-
-.text_espace {
-    color: #003366; 
-    margin-left: 65px;
-    margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center ;
-}
-
-#titre_espace {
-    font-size: 30px;
-    text-decoration:underline;
-}
-
-button[type="submit"] {
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    cursor: pointer;
 }
 
 

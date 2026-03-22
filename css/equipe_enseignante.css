@@ -1,3 +1,86 @@
+/*1. POLICE*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ffffff; 
+    margin: 0;
+}
+
+
+/*2. BARRE DE NAVIGATION*/
+
+#haut-de-page {
+    background-image: url("../image/campus2.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px; /* AJOUT : Comme le menu flotte, on ajoute de l'espace pour qu'il ne cache pas le podium */
+    padding-bottom: 80px; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+}
+
+header {
+    position: fixed; /* MAGIQUE : Fixe le menu en haut de l'écran */
+    top: 0;
+    left: 0;
+    width: 100%; /* S'étend sur toute la largeur */
+    z-index: 9999; /* Force le menu à rester TOUJOURS au-dessus du reste du site */
+    box-sizing: border-box; /* Empêche le menu de déborder sur les côtés */
+    
+    border-bottom: 1px solid rgba(255, 0, 255);  
+    
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.02)); 
+    backdrop-filter: blur(15px); 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    padding: 10px 40px; 
+}
+
+body>header>nav {
+    display: flex; 
+    align-items: center;
+    justify-content: flex-start; /* Aligne tout au début (à gauche) */
+}
+
+body>header>nav > a:first-child {
+    margin-right: 40px; /* Laisse juste un petit espace de 40px après le logo */
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 200px;
+    height: auto;
+    max-height: 60px;
+    vertical-align: middle; /* Assure un alignement parfait avec le texte */
+}
+
+.lien {
+    padding: 10px 15px;       
+    margin: 0 5px;              
+    color: #163767; 
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease; 
+    display: inline-block; /* Assure que le texte du bouton reste bien à son niveau */
+}
+
+.lien:hover {
+    transform: translateY(-3px); 
+    color: rgb(255, 0, 255); 
+    text-shadow: 0px 0px 10px rgba(255, 0, 255, 0.5); 
+}
+
+
+
+
+
+
 .banner{
     width: 100%;
     height: 100vh;
@@ -37,4 +120,77 @@
     height: 100%;
     object-fit: cover;
 }
+
+
+/*6. FOOTER*/
+
+footer {
+    background: linear-gradient(280deg, #051832 7%, #163767); 
+    
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 70px 20px 80px 20px;
+    margin-top: 150px;
+    
+    border-top: 3px solid #FF00FF; 
+    box-shadow: 0 -10px 30px rgba(255, 0, 255, 0.15);
+}
+
+footer br {
+    display: none;
+}
+
+.divs {
+    margin: 0; 
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#div1, #div2, #div3 {
+    border: none; 
+    background-color: transparent;
+    color: white;
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    width: auto;
+}
+
+#div1::after, #div2::after, #div3::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #FF00FF;
+    margin-top: 10px;
+    border-radius: 2px;
+    box-shadow: 0 0 8px rgba(255, 0, 255, 0.6);
+}
+
+.lien_footer {
+    text-decoration: none;
+    font-style: normal;
+    color: #cbd5e1;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: transparent; 
+    padding: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.lien_footer:hover {
+    transform: translateX(8px);
+    color: #ffffff;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    border-left: 2px solid #FF00FF; 
+    padding-left: 10px; 
+}
+
+
 
