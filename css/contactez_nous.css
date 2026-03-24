@@ -18,18 +18,18 @@ body {
     background-image: url("../image/campus2.jpg");
     background-size: cover;
     background-position: center;
-    padding-top: 80px; /* AJOUT : Comme le menu flotte, on ajoute de l'espace pour qu'il ne cache pas le podium */
+    padding-top: 80px;
     padding-bottom: 80px; 
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
 }
 
 header {
-    position: fixed; /* MAGIQUE : Fixe le menu en haut de l'écran */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* S'étend sur toute la largeur */
-    z-index: 9999; /* Force le menu à rester TOUJOURS au-dessus du reste du site */
-    box-sizing: border-box; /* Empêche le menu de déborder sur les côtés */
+    width: 100%;
+    z-index: 9999;
+    box-sizing: border-box; 
     
     border-bottom: 1px solid rgba(255, 0, 255);  
     
@@ -42,11 +42,11 @@ header {
 body>header>nav {
     display: flex; 
     align-items: center;
-    justify-content: flex-start; /* NOUVEAU : Aligne tout au début (à gauche) */
+    justify-content: flex-start;
 }
 
 body>header>nav > a:first-child {
-    margin-right: 40px; /* NOUVEAU : Laisse un espace de 40px après le logo */
+    margin-right: 40px;
     display: flex;
     align-items: center;
 }
@@ -55,7 +55,7 @@ body>header>nav > a:first-child {
     width: 200px;
     height: auto;
     max-height: 60px;
-    vertical-align: middle; /* Assure un alignement parfait avec le texte */
+    vertical-align: middle; 
 }
 
 .lien {
