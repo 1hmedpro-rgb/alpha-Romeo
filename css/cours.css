@@ -1,3 +1,4 @@
+
 /*1. POLICE*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
@@ -93,6 +94,7 @@ footer {
 
 footer br {
     display: none;
+    
 }
 
 .divs {
@@ -145,3 +147,37 @@ footer br {
     border-left: 2px solid #FF00FF; 
     padding-left: 10px; 
 }
+
+
+
+.list{
+    display: flex;
+    margin-left: 200px;
+    transform-style: preserve-3d ;
+    
+    
+    
+}
+
+.item *{
+    margin-top: 400px;
+    margin-bottom: 400px;
+    
+    
+    
+}
+
+
+.list .item {
+    transition: 0.5;
+    filter: brightness(0);
+}
+
+.list .item:hover{
+    filter: brightness(1);
+    transform : translateZ(00px)
+}
+
+
+    
+

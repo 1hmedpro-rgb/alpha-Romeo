@@ -67,6 +67,7 @@ body>header>nav > a:first-child {
     text-decoration: none;
     transition: all 0.3s ease; 
     display: inline-block; /* Assure que le texte du bouton reste bien à son niveau */
+    margin-left: 145px;
 }
 
 .lien:hover {
@@ -188,7 +189,7 @@ body>header>nav > a:first-child {
     border: solid 1px #003366; 
     width: 1000PX;
     height: 350px;
-    margin-left :500px;
+    margin-left :400px;
     margin-top: 400px;
     border-radius: 20px;
 }

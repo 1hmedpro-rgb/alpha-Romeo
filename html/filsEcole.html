@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>À Propos - Efrei</title>
+    <link rel="stylesheet" href="../css/filsEcole.css">
+</head>
+
+<body>
+    <header>
+        <nav> 
+            <a href = "Ecole.html"> <img src="../logo_efrei.png" alt="logo_efrei" id="logo"></a>
+            <a href="Ecole.html" class="lien">L'ECOLE</a>
+            <a href="cours_et_formations.html" class="lien">COURS / FORMATIONS</a>
+            <a href="equipe_enseignante.html" class="lien">EQUIPE ENSEIGNANTE</a>
+            <a href="contactez_nous.html" class="lien">CONTACTEZ-NOUS</a>
+            <a href="a_propos.html" class="lien">A PROPOS</a>
+
+            
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="header">
+            <div class="badge">DÉPOSER MA CANDIDATURE</div>
+           
+        </div>
+
+        <p class="info-text">Les champs marqués d'un astérisque (*) sont à remplir obligatoirement et correctement.</p>
+
+        <form method="post" action="traitementFormulaire.php">
+            
+            <div class="radio-group">
+                <div class="radio-item">
+                    <input type="radio" id="civ-m" name="civilite" value="M">
+                    <label for="civ-m" class="radio-label">M.</label>
+                </div>
+
+                <div class="radio-item">
+                    <input type="radio" id="civ-mme" name="civilite" value="Mme">
+                    <label for="civ-mme" class="radio-label">Mme</label>
+                </div>
+
+                <div class="radio-item">
+                    <input type="radio" id="civ-nr" name="civilite" value="NR">
+                    <label for="civ-nr" class="radio-label">Non renseigné</label>
+                </div>
+                
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <input type="text" name="prenom" placeholder="Prénom *" id="inp1" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="nom" placeholder="Nom *" id="inp2" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="autres_prenoms" placeholder="Autre(s) prénom(s)" id="inp3">
+                
+            </div>
+
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Email *" id="inp4" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <select name="nationalite" id="inp5" required>
+                        <option value="" disabled selected>Nationalité *</option>
+                        <option value="fr">Française</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select name="pays" id="inp6" required>
+                        <option value="" disabled selected>Pays de résidence *</option>
+                        <option value="fr">France</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group" >
+                    <select name="indicatif" id="inp7" required>
+                        <option value="+33">FR +33</option>
+                        <option value="+32">BE +32</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="telephone" placeholder="Numéro de mobile *" id="inp8" required>
+                </div>
+            </div>
+
+            
+
+            <div class="form-group">
+                <label for="cv" id="labelcv">Déposer votre CV (Format PDF) *</label>
+                <input type="file" id="cv" name="cv" accept=".pdf" id="inp9"required>
+            </div>
+
+            <div class="submit-container">
+                <button type="submit" class="btn-submit" id="inp10">ENVOYER</button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <footer>
+
+            
+            <div class ="divs">
+                <h3  id="div1" >NVIGATION</h3><br><br>
+                <a href="Ecole.html" class="lien_footer">L'ECOLE</a><br><br>
+                <a href="cours_et_formations.html" class="lien_footer">COURS / FORMATIONS</a>
+            </div>
+            
+            
+            <div class ="divs">
+                <h3  id="div2" >LIENS RAPIDES</h3><br><br>
+                <a href="equipe_enseignante.html" class="lien_footer">EQUIPE ENSEIGNANTE</a><br><br>
+                <a href="a_propos.html" class="lien_footer">A PROPOS</a>
+            </div>
+
+            
+            <div class ="divs"> 
+                <h3 id="div3">CONTACT</h3><br><br>
+                <a href="contactez_nous.html" class="lien_footer">CONTACTEZ-NOUS</a>
+            </div>
+            
+        </footer>
+
+</body>
+</html>
