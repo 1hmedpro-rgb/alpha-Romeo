@@ -95,18 +95,15 @@ main {
 
 .list .item {
     transition: 0.5s;
-    filter: brightness(0);
 }
 
 .list .item img{
     width: 200px;
     height: 200px;
-    padding: 5px;
-}
-
-.list .item:hover {
-    filter: brightness(1);
-    transform: translateZ(200px);
+    padding: 3px;
+    border-radius: 20px;
+    margin: 10px;
+    border: 2px solid #003366 ;
 }
 
 .list .item:hover {
@@ -142,6 +139,91 @@ main {
 .list .item:has(+ * + * + *:hover) {
     filter: brightness(0.2);
     transform: translateZ(30px) rotateY(-10deg);
+}
+
+/* Le fond d'écran flou */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.678); 
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000; /* Au-dessus de TOUT, même du menu */
+    
+    /* Caché par défaut */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+}
+
+/*quand l'ID est ciblé il est afficher*/
+.modal:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* La carte blanche au milieu de l'écran */
+.modal-content {
+    background: #ffffff;
+    width: 90%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    border: 2px solid #FF00FF;
+    transform: translateY(-50px) scale(0.9);
+    transition: all 0.4s ease;
+}
+
+/* Quand la modale s'ouvre, la carte prend sa place normale */
+.modal:target .modal-content {
+    transform: translateY(0) scale(1);
+}
+
+/* La croix pour fermer la modale */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 35px;
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+    line-height: 1;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #FF00FF;
+}
+
+/* Mise en forme de l'intérieur de la carte */
+.modal-content img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.modal-content h2 {
+    color: #003366;
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.modal-content p {
+    color: #6B7480;
+    font-size: 15px;
+    line-height: 1.6;
 }
 
 
