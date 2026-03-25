@@ -118,6 +118,7 @@ body>header>nav > a:first-child {
     transform-style: preserve-3d;
     transform: perspective(1000px);
     animation: autoRun 25s linear infinite;
+    z-index: 2;
 }
 @keyframes autoRun{
     from{
@@ -193,9 +194,28 @@ body>header>nav > a:first-child {
 .description::-webkit-scrollbar {
     width: 4px;
 }
+
 .description::-webkit-scrollbar-thumb {
     background-color: #FF00FF;
     border-radius: 4px;
+}
+
+
+.logo-centre {
+    position: absolute;
+    top: 25%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 300px;
+    height: auto;
+    display: flex; 
+    justify-content: center;
+    z-index: 1;
+}
+
+.logo-centre img {
+    width: 300%; 
+    filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.7)); 
 }
 
 /*6. FOOTER*/
