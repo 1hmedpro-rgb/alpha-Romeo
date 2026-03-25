@@ -1,16 +1,16 @@
-/*1. POLICE*/
-
+/* 1. POLICES ET PARAMÈTRES GLOBAUX*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
 
 * {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-color: #ffffff; 
-    margin: 0;
 }
-
 
 /*2. BARRE DE NAVIGATION*/
 #haut-de-page {
@@ -66,7 +66,8 @@ body>header>nav > a:first-child {
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease; 
-    display: inline-block; /* Assure que le texte du bouton reste bien à son niveau */
+    display: inline-block; 
+    margin-left: 145px;
 }
 
 .lien:hover {
@@ -75,6 +76,97 @@ body>header>nav > a:first-child {
     text-shadow: 0px 0px 10px rgba(255, 0, 255, 0.5); 
 }
 
+
+/*  3. TITRE DE LA PAGE*/
+#titre-contact-header {
+    text-align: center;
+    color: white; 
+    padding-top: 60px;
+}
+
+#titre-contact-header h1 {
+    font-size: 55px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+}
+
+#titre-contact-header p {
+    font-size: 20px;
+    color: #FF00FF; 
+    font-weight: 700;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+}
+
+/* 4. SECTION DES CRÉATEURS*/
+#createurs {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 100px 10%;
+    background-color: #f8f9fa; 
+    flex-wrap: wrap; 
+}
+
+.carte-createur {
+    background-color: white;
+    width: 380px;
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 51, 102, 0.08);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+/* Effet au survol de la carte */
+.carte-createur:hover {
+    transform: translateY(-10px);
+    border-color: #FF00FF;
+    box-shadow: 0 15px 35px rgba(255, 0, 255, 0.15);
+}
+
+/* Photo de profil ronde */
+.carte-createur img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; 
+    border: 4px solid #003366; 
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.carte-createur:hover img {
+    border-color: #FF00FF;
+    transform: scale(1.05); /* Petit zoom sur la photo */
+}
+
+/* Textes de présentation */
+.carte-createur h3 {
+    color: #003366;
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.carte-createur .role {
+    display: inline-block;
+    background-color: #003366;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.carte-createur p {
+    color: #6B7480;
+    font-size: 15px;
+    line-height: 1.6;
+}
 
 /*6. FOOTER*/
 

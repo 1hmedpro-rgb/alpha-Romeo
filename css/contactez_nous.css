@@ -15,7 +15,7 @@ body {
 
 /*2. HAUT DE PAGE ET BARRE DE NAVIGATION*/
 #haut-de-page {
-    background-image: url("../image/campus2.jpg");
+    background-image: url("../image/38-DSC05759-1024x683.jpg");
     background-size: cover;
     background-position: center;
     padding-top: 80px;
@@ -68,6 +68,7 @@ body>header>nav > a:first-child {
     text-decoration: none;
     transition: all 0.3s ease; 
     display: inline-block; /* Assure que le texte du bouton reste bien à son niveau */
+    margin-left: 150px;
 }
 
 .lien:hover {

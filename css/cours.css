@@ -67,9 +67,9 @@ body>header>nav > a:first-child {
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease; 
-    display: inline-block; 
+    display: inline-block; /* Assure que le texte du bouton reste bien à son niveau */
+    margin-left: 150px;
 }
-
 .lien:hover {
     transform: translateY(-3px); 
     color: rgb(255, 0, 255); 
