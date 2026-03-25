@@ -77,6 +77,75 @@ body>header>nav > a:first-child {
 }
 
 
+/* 3. liste*/
+
+main {
+    min-height: 70vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding-top: 120px; 
+}
+
+.list {
+    display: flex;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+
+.list .item {
+    transition: 0.5s;
+    filter: brightness(0);
+}
+
+.list .item img{
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+}
+
+.list .item:hover {
+    filter: brightness(1);
+    transform: translateZ(200px);
+}
+
+.list .item:hover {
+    filter: brightness(1);
+    transform: translateZ(200px);
+}
+
+.list .item:hover + * {
+    filter: brightness(0.6);
+    transform: translateZ(150px) rotateY(40deg);
+}
+
+.list .item:hover + * + * {
+    filter: brightness(0.4);
+    transform: translateZ(70px) rotateY(20deg);
+}
+
+.list .item:hover + * + * + * {
+    filter: brightness(0.2);
+    transform: translateZ(30px) rotateY(10deg);
+}
+
+.list .item:has(+ *:hover) {
+    filter: brightness(0.6);
+    transform: translateZ(150px) rotateY(-40deg);
+}
+
+.list .item:has(+ * + *:hover) {
+    filter: brightness(0.4);
+    transform: translateZ(70px) rotateY(-20deg);
+}
+
+.list .item:has(+ * + * + *:hover) {
+    filter: brightness(0.2);
+    transform: translateZ(30px) rotateY(-10deg);
+}
+
+
+
 /*6. FOOTER*/
 
 footer {
@@ -149,35 +218,4 @@ footer br {
 }
 
 
-
-.list{
-    display: flex;
-    margin-left: 200px;
-    transform-style: preserve-3d ;
-    
-    
-    
-}
-
-.item *{
-    margin-top: 400px;
-    margin-bottom: 400px;
-    
-    
-    
-}
-
-
-.list .item {
-    transition: 0.5;
-    filter: brightness(0);
-}
-
-.list .item:hover{
-    filter: brightness(1);
-    transform : translateZ(00px)
-}
-
-
-    
 
