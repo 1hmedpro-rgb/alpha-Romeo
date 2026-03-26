@@ -6,47 +6,75 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>À Propos - Efrei</title>
     <link rel="stylesheet" href="../css/a_propos.css">
+    <link rel="stylesheet" href="../css/headerfooter.css">
 </head>
 
 <body>
-    <header>
-        <nav> 
-            <a href = "Ecole.html"> <img src="../logo_efrei.png" alt="logo_efrei" id="logo"></a>
-            <a href="Ecole.html" class="lien">L'ECOLE</a>
-            <a href="cours_et_formations.html" class="lien">COURS / FORMATIONS</a>
-            <a href="equipe_enseignante.html" class="lien">EQUIPE ENSEIGNANTE</a>
-            <a href="contactez_nous.html" class="lien">CONTACTEZ-NOUS</a>
-            <a href="a_propos.html" class="lien">A PROPOS</a>
-
-            
-        </nav>
-    </header>
     
-    <section></section>
+    <div id="haut-de-page">
+        <header>
+            <nav> 
+                <a href ="Ecole.html"> <img src="../logo_efrei.png" alt="logo_efrei" id="logo"></a>
+                <a href="Ecole.html" class="lien">L'ECOLE</a>
+                <a href="cours_et_formations.html" class="lien">COURS / FORMATIONS</a>
+                <a href="equipe_enseignante.html" class="lien">EQUIPE ENSEIGNANTE</a>
+                <a href="contactez_nous.html" class="lien">CONTACTEZ-NOUS</a>
+                <a href="a_propos.html" class="lien">A PROPOS</a>
+            </nav>
+        </header>
+
+        <div id="titre-contact-header">
+            <h1>À Propos de Nous</h1>
+            <p>Découvrez l'équipe de choc derrière la création de ce site.</p>
+        </div>
+    </div>
+    
+    <section id="createurs">
+        
+        <div class="carte-createur">
+            <img src="../image/1761923111741.jpg" alt="Photo Bimen ISHAK">
+            <h3>Bimen ISHAK</h3>
+            <span class="role">Développeur FULL STACK</span>
+            <p>Passionné par le développement web, Bimen s'est occupé de l'interface visuelle et de l'expérience utilisateur du site pour le rendre moderne, fluide et agréable à utiliser.</p>
+            
+            <div class="contact-createur">
+                <a href="mailto:bimen.ishak@efrei.net" class="btn-contact">✉️ bimen.ishak@efrei.net</a>
+                <a href="https://www.linkedin.com/in/bimen-ishak/" target="_blank" class="btn-contact linkedin">🔗 Profil LinkedIn</a>
+            </div>
+        </div>
+
+        <div class="carte-createur">
+            <img src="../image/1761923698379.jpg" alt="Photo Ahmed MUHAMMAD">
+            <h3>Ahmed MUHAMMAD</h3>
+            <span class="role">Développeur FULL STACK</span>
+            <p>Expert en structuration de données, Ahmed a travaillé sur l'architecture robuste du site, la gestion des interactions et l'organisation propre du code.</p>
+            
+            <div class="contact-createur">
+                <a href="mailto:ahmed.muhammad@efrei.net" class="btn-contact">✉️ ahmed.muhammad@efrei.net</a>
+                <a href="https://www.linkedin.com/in/ahmed-muhammad-efrei/" target="_blank" class="btn-contact linkedin">🔗 Profil LinkedIn</a>
+            </div>
+        </div>
+
+    </section>
 
     <footer>
+        <div class ="divs">
+            <h3 id="div1">NAVIGATION</h3>
+            <a href="Ecole.html" class="lien_footer">L'ECOLE</a>
+            <a href="cours_et_formations.html" class="lien_footer">COURS / FORMATIONS</a>
+        </div>
+        
+        <div class ="divs">
+            <h3 id="div2">LIENS RAPIDES</h3>
+            <a href="equipe_enseignante.html" class="lien_footer">EQUIPE ENSEIGNANTE</a>
+            <a href="a_propos.html" class="lien_footer">A PROPOS</a>
+        </div>
 
-            
-            <div class ="divs">
-                <h3  id="div1" >NVIGATION</h3><br><br>
-                <a href="Ecole.html" class="lien_footer">L'ECOLE</a><br><br>
-                <a href="cours_et_formations.html" class="lien_footer">COURS / FORMATIONS</a>
-            </div>
-            
-            
-            <div class ="divs">
-                <h3  id="div2" >LIENS RAPIDES</h3><br><br>
-                <a href="equipe_enseignante.html" class="lien_footer">EQUIPE ENSEIGNANTE</a><br><br>
-                <a href="a_propos.html" class="lien_footer">A PROPOS</a>
-            </div>
-
-            
-            <div class ="divs"> 
-                <h3 id="div3">CONTACT</h3><br><br>
-                <a href="contactez_nous.html" class="lien_footer">CONTACTEZ-NOUS</a>
-            </div>
-            
-        </footer>
+        <div class ="divs"> 
+            <h3 id="div3">CONTACT</h3>
+            <a href="contactez_nous.html" class="lien_footer">CONTACTEZ-NOUS</a>
+        </div>
+    </footer>
 
 </body>
 </html>
