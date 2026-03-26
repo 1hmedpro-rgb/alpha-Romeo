@@ -125,6 +125,7 @@ body>header>nav > a:first-child {
         transform: perspective(1000px) rotateX(-10deg) rotateY(360deg);
     }
 }
+
 .banner .slider:hover {
     animation-play-state: paused;
 }
