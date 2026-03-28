@@ -101,15 +101,23 @@
 }
 
 .chiffre {
+
     font-size: 65px; 
+
     color: white; 
+
     font-weight: 800;
+
     margin-bottom: 10px; 
+
 }
 
 .description_chiffre {
+
     color: white; 
+
     font-size: 16px;
+
     font-weight: 700;
     text-transform: uppercase; 
     letter-spacing: 2px;
@@ -124,6 +132,7 @@
     align-items: center;
     margin: 150px auto 50px auto;
     padding: 0 20px;
+    padding-bottom: 100px;
 }
 
 .contenu_candidature {
