@@ -1,0 +1,19 @@
+
+
+/*corps de la page : */
+
+
+.boite-validation {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border-top: 5px solid #003366;
+    text-align: center;
+    max-width: 500px;
+    margin: 50px auto; 
+}
+
+.boite-validation h1 {
+    color: #ff00ff;
+}
