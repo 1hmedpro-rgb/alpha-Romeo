@@ -101,15 +101,23 @@
 }
 
 .chiffre {
+
     font-size: 65px; 
+
     color: white; 
+
     font-weight: 800;
+
     margin-bottom: 10px; 
+
 }
 
 .description_chiffre {
+
     color: white; 
+
     font-size: 16px;
+
     font-weight: 700;
     text-transform: uppercase; 
     letter-spacing: 2px;
