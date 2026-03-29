@@ -20,3 +20,5 @@ if (mail($destinataire, $sujet, $contenu, $entetes)) {
         // S'il y a une erreur technique
         echo "<h1>Oups, une erreur est survenue lors de l'envoi.</h1>";
     }
+
+?>
