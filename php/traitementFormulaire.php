@@ -7,6 +7,8 @@
     
         <link rel="stylesheet" href="../css/Ecole.css">
         <link rel="stylesheet" href="../css/traitementFormulaire.css">
+        <link rel="stylesheet" href="../css/headerfooter.css">
+
     </head>
 
     <body>
