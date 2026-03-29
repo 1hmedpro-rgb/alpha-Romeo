@@ -37,6 +37,11 @@ echo "<h1>Merci $prenom !</h1>";
 echo "<p>Votre candidature et votre CV ont bien été envoyés.</p>";
 echo "<a href='../html/Ecole.html'>Retour à l'accueil</a>";
 ?>
+
+
+
+
+
 <!DOCTYPE html>
 <html>
     <head>
