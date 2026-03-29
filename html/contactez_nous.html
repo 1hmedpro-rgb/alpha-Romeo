@@ -47,11 +47,14 @@
 
         <div class="contact-form">
             <h2>Envoyez-nous un message</h2>
-            <form action="#" method="POST">
-                <input type="text" placeholder="Votre Nom et Prénom" required>
-                <input type="email" placeholder="Votre adresse Email" required>
-                <input type="text" placeholder="Sujet de votre message" required>
-                <textarea rows="6" placeholder="Écrivez votre message ici..." required></textarea>
+            <form action="../php/mail.php" method="POST">
+    
+                <input type="text" name="nom" placeholder="Votre Nom" required>
+                
+                <input type="email" name="email" placeholder="Votre Email" required>
+                
+                <textarea name="message" placeholder="Votre Message" required></textarea>
+                
                 <button type="submit">Envoyer le message</button>
             </form>
         </div>
