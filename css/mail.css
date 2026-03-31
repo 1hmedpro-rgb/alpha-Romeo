@@ -1,0 +1,64 @@
+/* Fond de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* La carte blanche au milieu */
+.boite-message {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    border-top: 6px solid #FF00FF; 
+}
+
+/* Le Titre */
+.boite-message h1 {
+    color: #003366; 
+    font-size: 26px;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+/* Le texte */
+.boite-message p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+.btn-retour {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #003366;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+
+.btn-retour:hover {
+    background-color: #FF00FF;
+}
+
+
+.erreur {
+    border-top: 6px solid red;
+}
+.erreur h1 {
+    color: red;
+}
