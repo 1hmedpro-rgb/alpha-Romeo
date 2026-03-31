@@ -24,6 +24,8 @@ $entetes = "From: " . $email;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Statut de l'envoi</title>
     <link rel="stylesheet" href="../css/mail.css">
+    <link rel="stylesheet" href="../css/headerfooter.css">
+
 </head>
 <body>
 
