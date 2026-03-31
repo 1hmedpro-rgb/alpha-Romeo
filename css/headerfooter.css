@@ -129,6 +129,8 @@ footer br {
     background-color: transparent; 
     padding: 5px 0;
     transition: all 0.3s ease;
+    display: block;
+    margin-bottom: 15px;
 }
 
 .lien_footer:hover {
