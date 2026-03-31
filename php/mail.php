@@ -1,12 +1,12 @@
 
 <?php
-// 1. On récupère directement les données brutes (Sans sécurité)
+// 1. On récupère directement les données brutes
 $nom = $_POST["nom"];
 $email = $_POST["email"];
 $message = $_POST["message"];
 
 // 2. On prépare l'email
-$destinataire = "votre.email@efrei.net"; // Remplacez par votre mail
+$destinataire = "votre.email@efrei.net";
 $sujet = "Nouveau message de : " . $nom;
 $contenu = "Nom: $nom\nEmail: $email\nMessage:\n$message";
 $entetes = "From: " . $email;
