@@ -1,4 +1,3 @@
-
 <?php
 // 1. On récupère directement les données brutes
 $nom = $_POST["nom"];
@@ -11,11 +10,9 @@ $sujet = "Nouveau message de : " . $nom;
 $contenu = "Nom: $nom\nEmail: $email\nMessage:\n$message";
 $entetes = "From: " . $email;
 
-// 3. On envoie l'email
-(mail($destinataire, $sujet, $contenu, $entetes))
+// 3. CORRECTION : On envoie l'email ET on stocke le résultat dans la variable
+$envoi_reussi = mail($destinataire, $sujet, $contenu, $entetes);
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -23,9 +20,8 @@ $entetes = "From: " . $email;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Statut de l'envoi</title>
-    <link rel="stylesheet" href="../css/mail.css">
     <link rel="stylesheet" href="../css/headerfooter.css">
-
+    <link rel="stylesheet" href="../css/mail.css">
 </head>
 <body>
 
@@ -42,20 +38,21 @@ $entetes = "From: " . $email;
         </header>
     </div>
 
-    <?php if ($envoi_reussi): ?>
-        <div class="boite-message">
-            <h1>Super !</h1>
-            <p>Merci <strong><?php echo $nom; ?></strong>. Votre message a bien été envoyé, nous vous répondrons très vite à l'adresse <strong><?php echo $email; ?></strong>.</p>
-            <a href="../html/Ecole.html" class="btn-retour">Retour à l'accueil</a>
-        </div>
-    <?php else: ?>
-        <div class="boite-message erreur">
-            <h1>Oups !</h1>
-            <p>Désolé <?php echo $nom; ?>, une erreur technique est survenue. Votre message n'a pas pu être envoyé.</p>
-            <a href="../html/Ecole.html" class="btn-retour">Retour à l'accueil</a>
-        </div>
-    <?php endif; ?>
-
+    <main class="centre-page">
+        <?php if ($envoi_reussi): ?>
+            <div class="boite-message">
+                <h1>Super !</h1>
+                <p>Merci <strong><?php echo $nom; ?></strong>. Votre message a bien été envoyé, nous vous répondrons très vite à l'adresse <strong><?php echo $email; ?></strong>.</p>
+                <a href="../html/Ecole.html" class="btn-retour">Retour à l'accueil</a>
+            </div>
+        <?php else: ?>
+            <div class="boite-message erreur">
+                <h1>Oups !</h1>
+                <p>Désolé <?php echo $nom; ?>, une erreur technique est survenue. Votre message n'a pas pu être envoyé.</p>
+                <a href="../html/Ecole.html" class="btn-retour">Retour à l'accueil</a>
+            </div>
+        <?php endif; ?>
+    </main>
 
     <footer>    
         <div class ="divs">
@@ -75,8 +72,6 @@ $entetes = "From: " . $email;
             <a href="../html/contactez_nous.html" class="lien_footer">CONTACTEZ-NOUS</a>
         </div>
     </footer>
-
-
 
 </body>
 </html>

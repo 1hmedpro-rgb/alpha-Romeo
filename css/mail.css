@@ -1,13 +1,12 @@
 /* Fond de la page */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f7f6; 
+    background-color: #f4f7f6;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    flex-direction: column; 
+    min-height: 100vh; 
 }
 
 /* La carte blanche au milieu */
@@ -61,4 +60,14 @@ body {
 }
 .erreur h1 {
     color: red;
+}
+
+
+
+.centre-page {
+    flex: 1; /* Prend toute la place vide entre le header et le footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
 }
